@@ -1,0 +1,16 @@
+
+body {color:black;
+background-color:green;}
+h1 {font-size: 100px}
+h1 {font-family: serif;}
+h1 {color:#FFF8DC}
+h2 {font-size: 50px}
+h2 {color:#800080}
+p {font-size: 25px}
+p {color:#}
+img, div {
+  padding-top: 30px;
+  padding-right: 200px;
+  padding-bottom: 230px;
+  padding-left: 200px;
+}
