@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +7,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="letters" align="center">PRESENTATION DU PROJET</span>
+  </span>
+  </h1>
   <h1 align="center"><tt> PRESENTATION DU PROJET </tt></h1>
   <h2 align="center"> Snake </h2>
   <p align="center"><b> Snake est un jeu vidéo dans lequel le joueur dirige une ligne qui grandit et constitue ainsi elle-même un obstacle.
@@ -15,4 +21,28 @@
 <img src=http://www.gamedev.net/uploads/monthly_05_2013/ccs-137814-0-34657600-1369527492.png>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kSVBIuPZ1Bc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$('.ml6 .letters').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: function(el, i) {
+      return 50 * i;
+    }
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  }); </script>
+</body>
 </html>
