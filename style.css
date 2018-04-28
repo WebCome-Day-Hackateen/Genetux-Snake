@@ -1,16 +1,19 @@
-
-body {color:black;
+body {color:#1a1818;
 background-color:green;}
 h1 {font-size: 100px}
 h1 {font-family: serif;}
 h1 {color:#FFF8DC}
 h2 {font-size: 50px}
-h2 {color:#800080}
+h2 {color:#b6abb6;}
 p {font-size: 25px}
 p {color:#}
 img, div {
   padding-top: 30px;
-  padding-right: 200px;
+  padding-right: 20px;
   padding-bottom: 230px;
-  padding-left: 200px;
+  padding-left: 20px;
+}
+div#images{
+  text-align: center;
+  font-size: 200 px
 }
