@@ -1,6 +1,7 @@
 function abs(x) {
     return x >= 0 ? x : -x;
 }
+  
 
 class Controller {
     constructor (){
@@ -31,6 +32,8 @@ class Snake {
     constructor(){
         this.px = 500;
         this.py = 500;
+        this.ax = 20;
+        this.ay = 20;
         this.Controller = new Controller()
         this.pxNext = 0;
         this.pyNext = 0;
