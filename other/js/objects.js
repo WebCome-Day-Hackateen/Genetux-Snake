@@ -29,7 +29,7 @@ class Controller {
 }
 
 class Snake {
-    constructor(){
+    constructor() {
         this.px = 500;
         this.py = 500;
         this.ax = 20;
@@ -39,7 +39,7 @@ class Snake {
         this.pyNext = 0;
     }
 
-    changeDirection(px, py){
+    changeDirection(px, py) {
         this.pxNext = px;
         this.pyNext = py;
     }
