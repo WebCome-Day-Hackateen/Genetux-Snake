@@ -6,8 +6,8 @@ window.onload=function() {
 }
 
 function draw_canvas() {
-  ctx.fillStyle = "#565555";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#ff0000";
+  ctx.fillRect(0, 0, canvas.width, canvas.height;
 }
 
 function update() {
